@@ -1,0 +1,534 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Social Links Section */
+#social {
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.social-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.social-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-tab {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* GitHub Button */
+.github {
+    background: #333;
+}
+
+.github:hover {
+    background: #555;
+}
+
+/* LinkedIn Button */
+.linkedin {
+    background: #0077b5;
+}
+
+.linkedin:hover {
+    background: #005e93;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-tab {
+        width: 80%;
+        text-align: center;
+    }
+}
+/* Contact Section */
+#contact {
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #acb5daef;
+    box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.3);
+    outline: none;
+}
+
+/* Send Button */
+.btn-send {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+.btn-send::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+.btn-send:hover::before {
+    left: 100%;
+}
+
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background: #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    color:#555
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    color: #555;
+    align-items: center;
+    background: url('images/background.jpg') no-repeat center center/cover;
+}
+
+.home-content {
+    color: rgb(17, 14, 14);
+    text-align: center;
+    text-shadow: #005e93;
+    text-decoration-color: #ddd;
+    font-size: xx-large;
+    align-content: flex-start;
+}
+
+/* About Section (Left-aligned) */
+#about {
+    padding: 60px 10%;
+    background: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.about-image {
+    max-width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Skills Section (Left-aligned) */
+/* Skills Section */
+#skills {
+    padding:100px 10%;
+    background: #f9f9f9;
+    text-align: left;
+}
+
+.skills-container h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+/* Skills Section */
+#skills {
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.skills-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Individual Skill Box */
+.skill-box {
+    background: rgb(246, 242, 242);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill Icons */
+.skill-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+p{
+    color: rgb(126, 126, 167);
+    font-weight: 200;
+}
+a{
+    color:#333
+}
+#skills {
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Pink to Blue Gradient */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#contact {
+    padding: 60px 10%;
+    background: rgb(160, 196, 209); /* Transparent Glass Effect */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+.footer {
+    position: relative;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1rem;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('wave.svg') repeat-x;
+    animation: waveMove 8s infinite linear;
+}
+/* 🎨 ABOUT ME SECTION: Elegant Gradient & Glowing Border */
+#about {
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft Pink Gradient */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+/* 💡 Glowing Border Effect */
+#about::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* ✨ About Me Text Styling */
+#about h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+
+/* 🔥 Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 5%;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes waveMove {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 1000px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #skills, #contact {
+        padding: 40px 5%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile screens */
+    }
+}
+
+/* Projects Section (Left-aligned) */
+#projects {
+    padding: 60px 10%;
+    background: rgb(156, 124, 146);
+}
+
+.projects-container {
+    text-align: left;
+}
+
+.projects-container h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #665262;
+    box-shadow: 2px 2px 10px rgba(177, 135, 135, 0.1);
+}
+
+/* Contact Section */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    align-content: center;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+body {
+    background: linear-gradient(135deg, #a2a3c6, #a6769d);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Skills & Projects Left-align only on large screens */
+    #skills, #projects {
+        text-align: center;
+    }
+
+    .project-list {
+        text-align: center;
+    }
+}
